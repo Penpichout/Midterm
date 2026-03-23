@@ -1,0 +1,93 @@
+:root {
+    --primary-accent: #10b981;
+    --dark-bg: #0f172a;
+    --card-bg: #1e293b;
+    --darker-bg: #111827;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    scroll-behavior: smooth; 
+    background-color: var(--dark-bg);
+    color: #f8f9fa;
+}
+
+/* --- Navbar & Logo --- */
+.navbar { 
+    background-color: rgba(15, 23, 42, 0.95) !important; 
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.logo-box {
+    background-color: var(--primary-accent);
+    color: var(--dark-bg);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; 
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.navbar-brand:hover .logo-box {
+    transform: rotate(10deg) scale(1.1);
+    transition: 0.3s;
+}
+
+.nav-link:hover { color: var(--primary-accent) !important; }
+
+.btn-outline-accent {
+    border: 1px solid var(--primary-accent);
+    color: var(--primary-accent);
+}
+
+.btn-outline-accent:hover {
+    background-color: var(--primary-accent);
+    color: var(--dark-bg);
+}
+
+/* --- Sections --- */
+.hero-section { 
+    padding: 120px 0; 
+    background: radial-gradient(circle at top right, #1e293b, #0f172a);
+}
+
+.text-accent { color: var(--primary-accent); }
+.section-padding { padding: 100px 0; }
+.bg-light-dark { background-color: var(--darker-bg); }
+
+/* --- Cards --- */
+.card { 
+    background-color: var(--card-bg); 
+    color: white;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover { 
+    transform: translateY(-10px); 
+    border-color: var(--primary-accent);
+    transition: 0.3s;
+}
+
+/* --- Badges & Buttons --- */
+.skill-badge { 
+    background: rgba(16, 185, 129, 0.1); 
+    border: 1px solid var(--primary-accent);
+    color: var(--primary-accent);
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.btn-primary { 
+    background-color: var(--primary-accent); 
+    border: none; 
+}
+
+.form-control {
+    background-color: #1e293b;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+}
